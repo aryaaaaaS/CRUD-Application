@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative CRUD Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1 class="app-title">My Cool CRUD App</h1>
+    
+    <div class="crud-form">
+      <input type="text" id="item-input" placeholder="Add a new item">
+      <button id="add-btn">Add Item</button>
+    </div>
+
+    <div class="item-list-container">
+      <ul id="item-list"></ul>
+    </div>
+
+    <!-- Modal for Edit Item -->
+    <div class="modal" id="edit-modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <input type="text" id="edit-input">
+        <button id="save-btn">Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
